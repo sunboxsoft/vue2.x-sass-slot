@@ -1,0 +1,7 @@
+vue2.x 环境下安装sass
+   2 yarn add  node-sass --save-dev
+   3 yarn add  sass-loader@7.x --save-dev
+   4 yarn add style-loader --save-dev
+   5 np run dev
+   8 npm uninstall node-sass
+   9 yarn add  -D sass
