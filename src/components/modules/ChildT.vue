@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>测试</h3>
+    <h3>测试 scoped</h3>
     <slot></slot>
     <br />
     <slot name="default" :msg="msg"></slot>

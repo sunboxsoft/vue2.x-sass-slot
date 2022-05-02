@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h3>{{ msg }}</h3>
     <!-- <child-t> -->
     <!-- 父组件 中 默认插槽的4种写法 -->
     <!-- <template>默认插槽 </template>
