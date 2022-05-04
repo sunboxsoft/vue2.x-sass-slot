@@ -41,13 +41,16 @@ export default new Router({
         {
           path: "childb",
           name: "ChildB",
-          component: ChildB
+          component: ChildB,
+          // 别名
+          alias:'childb_alias' 
         },
         {
           /*(\\d+) 这是正则，规定category_id只能传入数字*/
           path: "childc/:category_id(\\d+)/:news_id",
           name: "ChildC",
-          component: ChildC
+          component: ChildC,
+          alias:'childc_alias/:category_id(\\d+)/:news_id'
         },
       ]
     },
