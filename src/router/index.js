@@ -48,8 +48,16 @@ export default new Router({
           path: "childc/:category_id(\\d+)/:news_id",
           name: "ChildC",
           component: ChildC
-        }
+        },
       ]
+    },
+    {
+      path: "/jiaguoqiang",
+      redirect: '/'
+    },
+    {
+      path: "/jia/:category_id(\\d+)/:news_id",
+      redirect:"/father/childc/:category_id(\\d+)/:news_id"
     }
   ]
 });
