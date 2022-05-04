@@ -5,7 +5,8 @@
     <router-link to="/father/childb">ChildB</router-link>
     <router-link to="/father/childc/123/news_id123">
     ChildC</router-link>
-    <router-view />
+    <transition name="fade" mode="in-out">
+    <router-view /></transition>
   </div>
 </template>
 
@@ -24,4 +25,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ .fade-enter-active, .fade-leave-active {
+        transition: all 0.3s ease;
+    }
+    .fade-enter{
+        transform: translateX(-200%);
+    }
+    .fade-enter-to{
+        transform: translateX(-100%);
+    }
+    .fade-leave{
+        transform: translateX(0);
+    }
+    .fade-leave-to{
+        transform: translateX(100%);
+    }
 </style>
