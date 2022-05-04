@@ -1,6 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import HelloWorld from "@/components/HelloWorld";
+import Right from "@/components/modules/Right";
+import Left from "@/components/modules/Left";
+
 import Father from "@/components/Father";
 import FatherDefault from '@/components/FatherDefault'
 import ChildA from "@/components/modules/ChildA";
@@ -14,7 +17,11 @@ export default new Router({
     {
       path: "/",
       name: "HelloWorld",
-      component: HelloWorld
+      components: {
+        default:HelloWorld,
+        left:Left,
+        right:Right
+      }
     },
     {
       path: "/father",
