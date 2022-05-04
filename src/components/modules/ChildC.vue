@@ -1,8 +1,10 @@
 <template>
  <div>
 ChildC<br/>>
-$route.params.category_id:{{$route.params.category_id}}
-$route.params.news_id:{{$route.params.news_id}}
+$route.params.category_id:
+{{$route.params.category_id}}
+$route.params.news_id:
+{{$route.params.news_id}}
  </div>
 </template>
 
