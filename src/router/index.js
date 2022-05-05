@@ -9,6 +9,8 @@ import FatherDefault from '@/components/FatherDefault'
 import ChildA from "@/components/modules/ChildA";
 import ChildB from "@/components/modules/ChildB";
 import ChildC from '@/components/modules/ChildC'
+import Error from '@/components/modules/Error'
+
 Vue.use(Router);
 
 export default new Router({
@@ -61,6 +63,10 @@ export default new Router({
     {
       path: "/jia/:category_id(\\d+)/:news_id",
       redirect:"/father/childc/:category_id(\\d+)/:news_id"
+    },
+    {
+      path: "*",
+      component:Error
     }
   ]
 });
