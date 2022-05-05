@@ -38,7 +38,12 @@ export default new Router({
         {
           path: "childa",
           name: "ChildA",
-          component: ChildA
+          component: ChildA,
+          beforeEnter (to, from, next) {
+            // ...
+            console.log(to,from,'beforeEnter (to, from, next)')
+            next()
+          },
         },
         {
           path: "childb",

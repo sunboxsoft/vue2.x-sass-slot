@@ -17,6 +17,16 @@ export default {
   watch: {},
   methods: {},
   mounted() {},
+  beforeRouteEnter (to, from, next) {
+    // ...
+    console.log(to, from, next,'beforeRouteEnter (to, from, next) {  ChildB.vue')
+    next()
+  },
+  beforeRouteLeave (to, from, next) {
+    // ...
+    console.log(to, from, next,'beforeRouteLeave (to, from, next) {  ChildB.vue')
+    next()
+  }
 };
 </script>
 
